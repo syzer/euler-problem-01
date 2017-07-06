@@ -15,3 +15,5 @@ watching changes
 ```bash
 npm i -g nodemon
 ```
+
+[a link](https://projecteuler.net/problem=1)
