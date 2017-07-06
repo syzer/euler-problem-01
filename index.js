@@ -1,40 +1,29 @@
 // If we list all the natural numbers below 10 that are multiples of 3 or 5,
 // we get 3, 5, 6 and 9. The sum of these multiples is 23.
 
-// > 6%0
-// NaN
-// > 6%1
-// 0
-
-calculate()
-
-function calculate() {
-  let n = 7
-  let i = 1
-  let max = 10
-
-  while (i < max){
-    if (n % i === 0) {
-      console.log(i, 'works')
-    } else {
-      console.log(i, 'not')
-    }
-    i++
-  }
-
-
-  // 7/3 = ?
-  // 7/5 = ?
-  // if is => +1
-
-  return 3
-}
-
-
-// calculate() === 23
-
 
 //
 // Find the sum of all the multiples of 3 or 5 below 1000.
+
+function calculate(max) {
+  let i = 2
+  let sum = 0
+
+  while (i < max) {
+    if ((i % 5 === 0 ) || (i % 3 === 0)) {
+      sum += i
+    }
+
+    i++
+  }
+
+  return sum
+}
+
+let resultOf10 = calculate(10)
+
+console.log(resultOf10 === 23)
+
+
 
 
