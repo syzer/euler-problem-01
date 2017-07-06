@@ -15,7 +15,7 @@ function calculate() {
     if (n % i === 0) {
       console.log('i')
     } else {
-
+      console.log('i', i)
     }
     i++
   }
