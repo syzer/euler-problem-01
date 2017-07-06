@@ -6,14 +6,16 @@
 // > 6%1
 // 0
 
+calculate()
 
 function calculate() {
   let n = 7
   let i = 1
+  let max = 10
 
-  while (i < n) {
+  while (i+1 < n) {
     if (n % i === 0) {
-      console.log('i')
+      console.log('i', 'works')
     } else {
       console.log('i', i)
     }
