@@ -6,32 +6,25 @@
 // > 6%1
 // 0
 
-calculate()
-
 function calculate() {
-  let n = 7
-  let i = 1
+  let i = 2
   let max = 10
+  let sum = 0
 
-  while (i+1 < n) {
-    if (n % i === 0) {
-      console.log('i', 'works')
-    } else {
-      console.log('i', i)
+  while (i < max) {
+    if ((i % 5 === 0 ) || (i % 3 === 0)) {
+      sum += i
     }
+
     i++
   }
 
-
-  // 7/3 = ?
-  // 7/5 = ?
-  // if is => +1
-
-  return 3
+  return sum
 }
 
+let resultOf10 = calculate(10)
 
-// calculate() === 23
+console.log(resultOf10 === 23)
 
 
 //
