@@ -13,11 +13,11 @@ function calculate() {
   let i = 1
   let max = 10
 
-  while (i+1 < n) {
+  while (i < max){
     if (n % i === 0) {
-      console.log('i', 'works')
+      console.log(i, 'works')
     } else {
-      console.log('i', i)
+      console.log(i, 'not')
     }
     i++
   }
