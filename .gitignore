@@ -188,3 +188,6 @@ pom.xml.asc
 .lein-failures
 .nrepl-port
 .gitignore
+
+# this is for the windows users
+.idea/
